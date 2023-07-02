@@ -1,0 +1,43 @@
+.space{
+	height:40px;
+}
+
+.h_div{
+	height:72px;
+	color:white;
+}
+
+.line{
+	border:solid 1px red;
+}
+
+.c{
+	float :left;
+	margin-left:16px;
+
+}
+
+.col1{
+	margin-left:80px;
+	height:72px;
+	width:72px;
+
+}
+
+.col2{
+	font-size:30px;
+	margin-top:20px;
+	
+}
+
+
+.c1{
+	float :right;
+	margin-left:36px;
+	margin-top:20px;
+}
+
+.col4{
+	margin-right:80px;
+
+}

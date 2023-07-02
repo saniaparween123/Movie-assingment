@@ -1,0 +1,48 @@
+.addMovieFooter{
+	margin:auto;
+	width:954px;
+	color:white;
+
+}
+.addMovie{
+	background-color:red;
+	font-size:20px;
+	color:white;
+	height:52px;
+	width:169px;
+	
+
+}
+
+.add{
+	background-color:red;
+	width:40px;
+
+}
+
+.f_div{
+	border:solid 1px #272734;
+	height:180px;
+	background-color:#272734;
+
+}
+
+.foo_img{
+	height:52px;
+	width:128px;
+	margin-top:80px;
+	margin-left:290px;
+	margin-right:10px;
+	background-color:#272734;
+	float:left;
+}
+.foo_text{
+	color:white;
+	background-color:#272734;
+	margin-top:90px;
+	font-size:28px;
+
+}
+font{
+	background-color:#272734;
+}

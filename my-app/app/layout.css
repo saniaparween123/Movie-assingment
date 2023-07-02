@@ -1,0 +1,42 @@
+*{
+	background-color:black;
+	margin:0px;
+}
+.Movie_row{
+	color:white;
+	margin:auto;
+	height :277px;
+	width:954px;
+
+}
+.black_line{
+	border:solid 1px gray;
+	margin:auto;
+	width:954px;
+}
+
+.Movie_details{
+	padding:10px;
+}
+
+.Movie_img{
+	float:left;
+	margin-right:26px;
+
+}
+
+
+.like{
+	height:32px;
+	margin:10px;
+}
+
+.delete{
+	height:32px;
+	float:right;
+
+}
+
+.fetch{
+	color:white;
+}
