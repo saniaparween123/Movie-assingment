@@ -1,23 +1,60 @@
+
 import './layout.css';
 import {Space} from './header.js';
 import Header from './header.js';
 import Footer from './footer.js';
 import Movie_row from './movie_row.js';
+import {movies} from './movie.js';
+import Counter from './counting.js'
 
 
-export default function App() {
+export default function My_movie_data() {
 	return (
-  		<div className="all">
+		<>
 			<Header />
 			
-			<Movie_row />
+			{movies.map(movie =>
+				<Movie_row movie={movie} />
+				
+			)}
+			
 			
 			<Space/>
-			<Space/>
-			
 			<Footer />
-		</div>
-  );
+		</>
+	
+	
+	
+	)
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,11 +1,11 @@
 *{
-	background-color:black;
+	background-color:#0E0E15;
 	margin:0px;
 }
 .Movie_row{
 	color:white;
 	margin:auto;
-	height :277px;
+	height :300px;
 	width:954px;
 
 }
@@ -16,7 +16,9 @@
 }
 
 .Movie_details{
-	padding:10px;
+	margin:auto;
+	height:80%;
+	width:900px;
 }
 
 .Movie_img{
@@ -28,11 +30,10 @@
 
 .like{
 	height:32px;
-	margin:10px;
+	margin:0px;
 }
 
 .delete{
-	height:32px;
 	float:right;
 
 }
@@ -40,3 +41,34 @@
 .fetch{
 	color:white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
