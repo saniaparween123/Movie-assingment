@@ -17,9 +17,10 @@ export default function Movie_row(props) {
 				<div className="Movie_details">
 				
 					<h1>{props.movie.title}</h1> <br/>
-					<p> {props.movie.release_date +' .  ' + props.movie.popularity+'   |   '+ props.movie.vote_average} </p><br/>
+					<p> {props.movie.Year +' .  ' + props.movie.Duration+'   |   '+ props.movie.Gener} </p><br/>
 					<h3>Description</h3>
-					<p>{props.movie.overview}</p> 
+					<p>{props.movie.Description}</p> 
+					
 
 				</div>
 				<div>
