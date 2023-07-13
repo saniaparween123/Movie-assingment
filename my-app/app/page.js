@@ -1,37 +1,45 @@
 'use client';
 
+import React, { useState } from 'react';
+import {movies} from './movie.js';
 import './layout.css';
 import {Space} from './header.js';
 import Header from './header.js';
 import Footer from './footer.js';
-import Movie_row from './movie_row.js';
-import {movies} from './movie.js';
+import MovieRow from './movie_row.js';
 
 
 
-export default function My_movie_data() {
-	return (
-		<>
-			<Header />
-			
-			{movies.map(movie =>
-				<Movie_row movie={movie} />
-				
-			)}
-			
-			
-			<Space/>
-			<Footer />
-		</>
-	
-	
-	
-	)
+const MyComponent = () => {
+  const [items, setItems] = useState(movies);
+
+  const handleDelete = (id) => {
+    setItems(items.filter((item) => item.id !== id));
+  };
+  
 
 
-}
+  return (
+    <div>
+      <Header />
+      {items.map((item) => (
+        <div key={item.id}>
+          <MovieRow item={item} handleDelete={() => handleDelete(item.id)} />
+        </div>
+      ))}
+      <Footer />
+    </div>
+  );
+};
+
+export default MyComponent;
 
 
+
+
+
+
+ 
 
 
 
