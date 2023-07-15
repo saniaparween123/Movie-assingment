@@ -30,7 +30,12 @@ export default function MovieRow(props) {
         
         
         <div className="action_ui">
-          <Rating />
+        
+          <Rating 
+            likeClick={props.likeClick}
+            dislikeClick={props.dislikeClick}
+            votes={props.votes}
+            />
           
           <Delete handleDelete={props.handleDelete} />
         </div>

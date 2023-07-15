@@ -8,6 +8,7 @@ export default function Delete(props) {
       className="delete"
       src="del.svg"
       alt="img"
+      
       onClick={props.handleDelete}
     />
   );
