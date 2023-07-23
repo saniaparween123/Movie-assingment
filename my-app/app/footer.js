@@ -1,14 +1,21 @@
 import './footer.css'
 import {Space} from './header.js';
 
-export default function Footer(){
+
+export default function Footer(props){
+
+	
 	return (
 		<>
 			<div className="addMovieFooter">
-				<h3>Add A New Movie</h3>
-				<p>To add a movie you have to fill a form. The added movie will appear in the list above
-</p><br/>
-				<button className="addMovie" >New Movie <img className="add" src="add.svg" alt="img"/></button>
+				<div>
+					<h3>Add A New Movie</h3>
+					<p>To add a movie you have to fill a form. The added movie will appear in the list above
+					</p><br/>
+				</div>
+				<div>
+					<button className="addMovie" onClick={props.handleAdd} >New Movie <img className="add" src="add.svg" alt="img"/></button>
+				</div>
 			</div>
 			<Space />
 			<Space />

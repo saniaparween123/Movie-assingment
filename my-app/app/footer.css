@@ -46,3 +46,48 @@
 font{
 	background-color:#272734;
 }
+
+
+.form{
+	background-color:#272734;
+	width:960px;
+	height:1247px;
+	margin:auto;
+	padding-top: 50px;
+
+}
+
+.common{
+	background-color:#272734;
+
+}
+.inp_com{
+	margin-bottom:15px;
+	background-color:#5E5E75;
+	height:40px;
+	width:352px;
+}
+
+.b{
+	margin-left:160px;
+}
+
+.d{
+	margin-top:25px;
+}
+
+.in{
+	width:93px;
+	height:40px;
+}
+
+
+
+
+
+
+
+
+
+
+

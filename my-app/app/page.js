@@ -7,12 +7,14 @@ import {Space} from './header.js';
 import Header from './header.js';
 import Footer from './footer.js';
 import MovieRow from './movie_row.js';
+import AddMovie from './add_movie_form.js';	
 
 
 
 const MyComponent = () => {
   const [items, setItems] = useState(movies);
   const [votes, setVotes] = useState({});
+  const [AddNewMovie, setAddNewMovie] = useState(false);
 
 
   const handleDelete = (id) => {
@@ -21,7 +23,7 @@ const MyComponent = () => {
 
   
   function likeClick(id) {
-  		const updateVote={...votes}
+  	const updateVote={...votes}
   		
   		if (updateVote[id] == undefined){
   			updateVote[id] = 1
@@ -33,8 +35,8 @@ const MyComponent = () => {
 		
 	}
 
-  	function dislikeClick(id) {
-    	const updateVote={...votes}
+  function dislikeClick(id) {
+  	const updateVote={...votes}
     	
   		if (updateVote[id] == undefined){
   			updateVote[id] = -1
@@ -50,8 +52,13 @@ const MyComponent = () => {
 		const voteA = votes[a.id] || 0;
 		const voteB = votes[b.id] || 0;
 		return voteB - voteA;
-  });
+	});
 
+
+	const handleAdd = () => {
+    	setAddNewMovie(true); 
+  	};
+  
 
   return (
     <div>
@@ -69,7 +76,10 @@ const MyComponent = () => {
           	 />
         </div>
       ))}
-      <Footer />
+      
+      {AddNewMovie && <AddMovie />}
+      <Footer handleAdd={() => handleAdd()} />
+
     </div>
   );
 };
